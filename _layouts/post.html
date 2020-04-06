@@ -11,6 +11,7 @@ layout: page
 		{% include comment.html %}
     </div>
     <footer class="c-article__footer">
+        <p class="c-article__time"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
         <p>
         {% for tag in page.tags %}
             <span class="c-tag">{{ tag }}</span>
