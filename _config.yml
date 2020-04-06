@@ -1,17 +1,11 @@
-# Site settings
-title: Your site
+title: rainygirl's Op-eds
 description: >
-    Your description
-author: Your name
-email: your@e.mail
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yourname.github.io" # the base hostname & protocol for your site
-twitter_username: YourTwitter
-github_username:  YourGitHub
+    Software Engineer, Technology Journalist based in Seoul
+author: rainygirl
+email: rainygirl@gmail.com
+baseurl: "" 
+url: "https://rainygirl.github.io" 
 
-disqus_shortname: YourDisqusShortname
-
-# Build settings
 include: [_pages]
 markdown: kramdown
 permalink: /:year/:month/:title
@@ -21,11 +15,10 @@ sass:
 gems:
   - jemoji
   - jekyll-sitemap
-# - amp-jekyll # Acceletrated Mobile Pages
+  - amp-jekyll 
 
-# AMP Settings
-# ampdir: amp/
-# enable_amp: true
+ampdir: amp/
+enable_amp: true
 
-# Google Analytics
-# google_analytics: UA-XXXXXXXX-X
+google_analytics: UA-19555082-3
+

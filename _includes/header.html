@@ -1,12 +1,31 @@
-<header class="c-page__header">
-        <h1>{{ site.description }}</h1>
-	{% if page.title == 'Home' %}
-    <p>
-        <a href="{{ "/" | prepend: site.baseurl }}">Home</a><span class="u-separate"></span> <a href="{{ "/about/" | prepend: site.baseurl }}">About</a><span class="u-separate"></span> <a href="{{ "/links/" | prepend: site.baseurl }}">Links</a>
-    </p>
-	{% else %}
-    <p>
-        <a href="{{ "/" | prepend: site.baseurl }}">&lt;&ndash;&ndash; Back</a>
-    </p>
-	{% endif %}
+<div class="box">
+    <a href="https://rainygirl.com">About</a>
+    <a href="{{ "/" | prepand:site.base_url }}" class="on">Op-eds</a>
+</div>
+
+<div class="profileimg"></div>
+
+<header class="badge">
+    <a href="https://rainygirl.com">
+        <h1>Lee JunHaeng</h1>
+        <h3 class="aka">aka rainygirl</h3>
+    </a>
+
+    <h2>Software Engineer, Product Owner, Technology Journalist based in Seoul</h2>
+
+    <a class="twitter-follow-button"
+      href="https://twitter.com/rainygirl_"
+      data-show-count="false"
+      data-lang="en">
+    Follow @rainygirl_
+    </a>
+
+    <div class="social">
+        <a href="https://twitter.com/rainygirl_" target="_blank"><i class="fab fa-twitter"></i> @rainygirl_</a>
+        <a href="https://facebook.com/rainygirl" target="_blank"><i class="fab fa-facebook"></i> /rainygirl</a>
+        <a href="https://github.com/rainygirl" target="_blank"> <i class="fab fa-github"></i> /rainygirl</a>
+        <a href="https://angel.co/rainygirl" target="_blank"> <i class="fab fa-angellist"></i> /rainygirl</a>
+        <a href="https://www.linkedin.com/in/rainygirl" target="_blank"> <i class="fab fa-linkedin"></i> /rainygirl</a>
+    </div>
+
 </header>

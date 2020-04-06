@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Home
+title: Index
 ---
 <section class="c-archives">
 {% for post in site.posts  %}
@@ -12,8 +12,8 @@ title: Home
         <ul class="c-archives__list">
     {% endif %}
         <li class="c-archives__item">
-            <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
             <p>{{ post.date | date: "%b %-d, %Y" }}</p>
+            <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
         </li>
     {% if forloop.last %}
         </ul>
