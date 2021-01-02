@@ -36,7 +36,10 @@ header.badge{
 background:url(https://img.hani.co.kr/imgdb/resize/2013/0713/137360964436_20130713.JPG) 50% 0% no-repeat;background-size:160px;
 z-index:1;
 }
-
+pre{
+    border-left:1px solid #d0d0d0;
+    padding-left:10px;
+}
 .box{
     position:fixed;
     left:0;
