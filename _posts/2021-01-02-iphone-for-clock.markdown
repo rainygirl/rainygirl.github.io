@@ -5,7 +5,7 @@ date:   2021-01-02 00:00:00
 ---
 10여년간 거실을 지키던 탁상시계가 고장났다. 숫자가 크게 나와서 마음에 들었던 시계였는데 연말에 동네가 잠시 정전된 사이 완전히 고장나버렸다. 창밖 너머에는 거대한 시계를 벽면에 붙인 대형 빌딩도 있었고 맥북 귀퉁이에도 늘 시계가 표시되어 있으니 집에 시계가 꼭 있어야할까 싶어 새 시계 구매를 미루었지만, 샤워하고 나와서 늘 확인하던 거실 시계가 없어지니 여간 불편한게 아니었다.
 
-스마트 시계를 하나 장만할까 하고 알아보았다. 이 정도 디자인이면 디스플레이를 사다가 내가 만들어도 되겠다 싶었다. 그렇게 디스플레이를 알아보니 예산이 몇십만원으로 불어나기 시작했다.
+스마트 시계를 하나 장만할까 하고 알아보았다. 이 정도 디자인이면 디스플레이를 사다가 내가 만들어도 되겠다 싶었다. 그렇게 [디스플레이를 알아보니](https://twitter.com/mzyy94/status/1339108637701070849) [예산이 몇십만원으로 불어나기 시작했다](https://ko.aliexpress.com/item/1005001694276785.html).
 그러던 와중에 스트리밍 라디오 출력용으로 쓰던 구형 아이폰이 시야에 들어왔다. 집에 굴러다니는 구형 폰이 얼마나 많던가. 구형 아이폰 디스플레이를 탁상시계로 만들어보기로 했다.
 
 <div class="fb-post" data-href="https://www.facebook.com/rainygirl/posts/10159113297774136" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/rainygirl/posts/10159113297774136" class="fb-xfbml-parse-ignore">Posted by <a href="#" role="button">rainygirl</a> on&nbsp;<a href="https://www.facebook.com/rainygirl/posts/10159113297774136">Saturday, January 2, 2021</a></blockquote></div>
