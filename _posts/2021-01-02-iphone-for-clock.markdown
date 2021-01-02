@@ -26,6 +26,7 @@ date:   2021-01-02 00:00:00
 지하철 도착역을 안내하는 행선안내기가 Internet Explorer 를 띄워 작동하는걸 본 일이 있다. 적당한 키오스크는 웹브라우저 방식으로 만들어도 되겠다고 생각했다. 
 Javascript로 시계를 만드는건 매우 쉽다. new Date() 에서 시분값을 가져오면 된다.
 
+### clock.js
 ```javascript
 function getClock(){
   const _=new Date,
@@ -43,6 +44,7 @@ setInterval 로 값을 받아 그려주면 된다..
 
 그저 숫자만 바뀌면 밋밋하니까, 자릿수마다 DIV를 두개 넣어 숫자가 바뀔 즈음 아래에서 위로 숫자를 밀어내도록 transition을 넣어주었다.
 
+### clock.css
 ```css
 #clock>div{
   position:absolute;
@@ -68,6 +70,7 @@ setInterval 로 값을 받아 그려주면 된다..
 }
 ```
 
+### clock.js
 ```javascript
 function flip(i){
   const t=document.getElementById(`clock${i}`);
@@ -97,6 +100,7 @@ for(let i=3;i>=0;i--){
 한때 전체화면 웹앱을 쉽게 만들어준다는 apple-mobile-web-app-capable 같은 메타태그도 있었지만 [다 옛날 이야기다. iOS 8에서 사라졌다.](https://developer.apple.com/library/archive/releasenotes/General/RN-iOSSDK-8.0/) 
 요즘에는 PWA 구성을 위한 manifest 를 만들어 구현한다. 우선 아래와 같은 manifest 파일을 만들고,
 
+### manifest.json
 ```javascript
 {
   "name": "rclock",
@@ -113,6 +117,7 @@ for(let i=3;i>=0;i--){
 
 이 manifest 를 HTML에서 아래와 같이 연결해 쓰면 된다.
 
+### index.html
 ```html
 <link rel="manifest" href="./manifest.json">
 ```
@@ -127,6 +132,7 @@ for(let i=3;i>=0;i--){
 
 외부 클라우드 등에서 돌고 있는 인스턴스를 썼다간 야금야금 돈도 나가고 관리부담도 생길 것이다. 데이터 수집을 위해 집에서 항상 켜두고 있던 2010년형 맥북을 겸사겸사 홈 서버로 쓰기로 했다. Python/FastAPI로 서버를 하나 띄웠다. 웹페이지는 HTML 코드를 템플릿 엔진 안거치고서 대충 띄우게 했다. HTML 코드를 직접 고치는 것 외에 더 손 볼 일은 없다.
 
+### main.py
 ```python
 from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
@@ -164,6 +170,7 @@ async def manifest():
 
 시계에는 간단한 최저 기온, 최고 기온, 현재 체감기온, 오늘의 날씨만 나오면 된다. 시계가 정보를 과다하게 제공할 필요는 없다. 내일 날씨는 애플 워치나 iStats Weather, 또는 Spotlight의 날씨, 맥OS 날씨 위젯, 평소에 사용하는 아이폰 날씨 위젯, 말하는 시리, 잠깐 켠 TV뉴스, 라디오 1분 기상정보 등이 알려줄 것이다. 나는 단지, 지금 당장 집밖으로 나가야한다면 대충 후드 뒤집어쓰고 나가도 되는지 패딩을 입고 나가야하는지를 알고싶은 것이다. 그래서, 현재 기온 대신 체감 기온을 가져오고 현재 날씨만 가져오기로 했다. 
 
+### main.py
 ```python
 @app.get("/weather")
 async def weather():
@@ -213,8 +220,8 @@ TIMEOUTclose=1
 FastAPI 서버를 띄우고 stunnel을 띄우면 적당히 돌아가는 https 웹서버가 구성된다.
 
 ```
-uvicorn main:app --host 0.0.0.0 --reload &
-stunnel dev_https &
+> uvicorn main:app --host 0.0.0.0 --reload &
+> stunnel dev_https &
 ```
 
 정식으로 발급된 인증서가 아니니 경고가 뜰 것이다.
