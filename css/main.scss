@@ -36,10 +36,7 @@ header.badge{
 background:url(https://img.hani.co.kr/imgdb/resize/2013/0713/137360964436_20130713.JPG) 50% 0% no-repeat;background-size:160px;
 z-index:1;
 }
-pre{
-    border-left:1px solid #d0d0d0;
-    padding-left:10px;
-}
+
 .box{
     position:fixed;
     left:0;
@@ -168,6 +165,14 @@ pre{
             margin-bottom:40px;
         }
     }
+    pre{
+        border-left:1px solid #d0d0d0;
+        padding-left:10px;
+    }
+    h3{
+        font-size:.4em;
+        color:#999;
+    }
     time{
         font-size:.7em;
         color:#999;
@@ -184,9 +189,9 @@ pre{
         font-size:15px;
     }
     h1{
-        font-size:1.5em
+        font-size:2em
     }
-    
+
     .profileimg{
         top:70px;
         left:20px;
@@ -214,7 +219,14 @@ pre{
             }
         }
     }
-
+    .c-article__main{
+        h1{
+            font-size:1.5em;
+        }
+        h3{
+            font-size:1.1em;
+        }
+    }
 }
 
 
