@@ -185,16 +185,16 @@ z-index:1;
 
 @media all and (max-width:600px){
     body{
-        margin:250px 20px 20px 20px;
+        margin:250px 0 20px 0;
         font-size:15px;
     }
     h1{
         font-size:2em
     }
-
+    
     .profileimg{
         top:70px;
-        left:20px;
+        left:40px;
     }
     .box{
         position:absolute;
@@ -211,6 +211,13 @@ z-index:1;
             padding:0 20px;
         }
     }
+    article>header,
+    footer,
+    .badge,
+    .c-archives,
+        padding:0 20px;
+    }
+    
     .c-archives__list {
         li{
             padding:35px 0 40px 0;
@@ -223,8 +230,15 @@ z-index:1;
         div.fb-post span,
         pre,
         p,
+        img,
         iframe{
             max-width:100% !important;
+        }
+        blockquote,
+        pre,
+        p{
+            margin-left:20px;
+            margin-right:20px;
         }
         pre{
             word-break:break-all;
