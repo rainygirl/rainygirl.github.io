@@ -234,6 +234,18 @@ z-index:1;
         iframe{
             max-width:100% !important;
         }
+        table{
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+            td,th{
+        border-right: 1px solid #dcdcdc;
+        padding: 8px 12px
+                }
+    td{
+        border-right: 1px solid #dcdcdc;
+    }
+        }
         blockquote,
         pre,
         >h1,
