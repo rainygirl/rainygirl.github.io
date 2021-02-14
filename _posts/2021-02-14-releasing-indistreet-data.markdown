@@ -3,7 +3,7 @@ layout: post
 title:  "인디스트릿 공연정보/밴드/뮤지션/공연장 오픈 라이센스 공개"
 date:   2021-02-14 00:00:00
 ---
-2011년부터 2017년까지 운영되었던 인디스트릿의 공연/뮤지션/공연장 데이터를 [CC BY 라이센스](https://creativecommons.org/licenses/by/4.0/deed.ko) 로 공개합니다.
+2011년부터 2018년까지 운영되었던 인디스트릿의 공연/뮤지션/공연장 데이터를 [CC BY 라이센스](https://creativecommons.org/licenses/by/4.0/deed.ko) 로 공개합니다.
 
 
 # 데이터 구성
