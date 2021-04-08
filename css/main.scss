@@ -159,19 +159,7 @@ z-index:1;
         font-size:1.5em;
         font-weight:400;
     }
-    header h1,
-    footer .badge{
-        &:before{
-            content:'';
-            width:10px;
-            height:10px;
-            border-radius:10px;
-            background:#999;
-            display:block;
-            margin-bottom:40px;
-        }
-    }
-    pre{
+   pre{
         border-left:1px solid #d0d0d0;
         padding-left:10px;
     }
@@ -212,8 +200,23 @@ border-bottom: 1px solid #dcdcdc;
     }
 
 }
-
-
+footer.badge{
+    padding-top:60px;
+    position:relative;
+}
+header h1,
+footer .badge{
+    &:before{
+        content:'';
+        width:10px;
+        height:10px;
+        border-radius:10px;
+        background:#999;
+        display:block;
+        margin-bottom:40px;
+    }
+}
+ 
 
 @media all and (max-width:600px){
     body{
