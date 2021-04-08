@@ -6,6 +6,7 @@
 body{
     background:#fff;font-family:"Quattrocento Sans","Helvetica Neue",Helvetica,"Apple SD Gothic Neo","Malgun Gothic",Arial,Dotum,sans-serif;margin:100px 20px 0 300px;font-size:20px;color:#494949;text-shadow:0 1px 1px #fff
 }
+div.badge,
 header.badge{
     a{
         text-decoration:none;
@@ -145,6 +146,7 @@ z-index:1;
         border-left:1px solid #c0c1c2;
         margin-left:0;
         padding-left:2.5em;
+        color:#630;
         img{
             border:1px solid #000;
         }
@@ -240,7 +242,8 @@ border-bottom: 1px solid #dcdcdc;
     }
     article>header,
     footer,
-    .badge,
+    div.badge,
+    header.badge
     .c-archives{
         padding:0 20px;
     }
@@ -275,6 +278,10 @@ border-bottom: 1px solid #dcdcdc;
             margin-left:20px;
             margin-right:20px;
         }
+        blockquote {
+            padding-left:0;
+        }
+
         pre{
             font-size:14px;
             overflow-x:scroll;
