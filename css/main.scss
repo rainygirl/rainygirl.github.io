@@ -226,11 +226,11 @@ footer .badge{
     h1{
         font-size:2em
     }
-    
     .profileimg{
         top:70px;
-        left:40px;
+        left:20px;
     }
+
     .box{
         position:absolute;
         top:0;
@@ -252,7 +252,9 @@ footer .badge{
     .c-archives{
         padding:0 20px;
     }
-    
+    .c-article-header h1{
+        margin-top:260px;
+    }
     .c-archives__list {
         li{
             padding:35px 0 40px 0;
