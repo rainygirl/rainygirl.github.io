@@ -120,7 +120,7 @@ CMS는 Content Management System, 즉 콘텐츠를 편집하고 발행하여 운
 > [What I Saw in Syria - The New York Times](https://www.nytimes.com/interactive/2016/06/10/world/middleeast/syria-road-trip.html)
 
 오랫동안 인터렉티브 스토리텔링에 신경써온 언론사로는 호주 공영방송 SBS가 있습니다. 호주 SBS는 시사 콘텐츠를 기획할 때 TV에 방영할 시리즈와 온라인에 배포할 인터렉티브를 동시에 제작하는 시스템을 갖추고 있습니다. 이보다 더 아름다운 읽기 경험은 없겠다 싶은, 예술에 가까운 스토리텔링을 보여줍니다. 디지털 노하우가 축적된 공영방송이라 가능한 일이었을 것입니다.
-> [Junko’s Story: Surviving Hiroshima’s Atomic Bomb | SBS](http://www.sbs.com.au/hiroshima/)
+> [Junko’s Story: Surviving Hiroshima’s Atomic Bomb - SBS](http://www.sbs.com.au/hiroshima/)
 
 핀치 팀이 지향하는 인터렉티브는 [QUARTZ](qz.com) 의 간결한 데이터 시각화와, 호주 SBS의 몰입도 높은 인터렉티브를 모델로 했습니다. 디지털 기기를 이해하고 디지털 스토리텔링을 이해하는 편집자, 디자이너, 일러스트레이터, 그리고 개발자가 함께 표현 기법을 고민하고 개발하는 방식이었습니다.  데이터시각화 콘텐츠는 이후 데이터만 모아 정보를 전달하는 Pinch Numbers 서비스로 피봇하여 구성되기도 하였습니다. 다음은 핀치에서 발행된 인터렉티브 스토리텔링 중 일부입니다.
 
