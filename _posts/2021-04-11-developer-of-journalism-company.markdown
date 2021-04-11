@@ -124,8 +124,8 @@ CMS는 Content Management System, 즉 콘텐츠를 편집하고 발행하여 운
 
 핀치 팀이 지향하는 인터렉티브는 [QUARTZ](qz.com) 의 간결한 데이터 시각화와, 호주 SBS의 몰입도 높은 인터렉티브를 모델로 했습니다. 디지털 기기를 이해하고 디지털 스토리텔링을 이해하는 편집자, 디자이너, 일러스트레이터, 그리고 개발자가 함께 표현 기법을 고민하고 개발하는 방식이었습니다.  데이터시각화 콘텐츠는 이후 데이터만 모아 정보를 전달하는 Pinch Numbers 서비스로 피봇하여 구성되기도 하였습니다. 다음은 핀치에서 발행된 인터렉티브 스토리텔링 중 일부입니다.
 
-> [Colored by Pinch](http://thepin.ch/knowledge/mc3s1/2016-year-in-review)
-> [월경컵 바이블](https://thepin.ch/knowledge/m1gnn/menstrual-cup-bible)
+> * [Colored by Pinch](http://thepin.ch/knowledge/mc3s1/2016-year-in-review)
+> * [월경컵 바이블](https://thepin.ch/knowledge/m1gnn/menstrual-cup-bible)
 
 인터렉티브 콘텐츠는 콘텐츠의 스토리텔링을 위해 별도의 CSS와 별도의 Javascript 코드를 넣어야 합니다. 이는 경직된 CMS 에서는 구현하기 어렵기 때문에 상당수 국내 언론사들이 인터렉티브 콘텐츠를 제공하기 위한 별도의 ‘호스팅’ 서버를 구성하곤 합니다. 핀치 팀은 인터렉티브 콘텐츠의 코드를 일반 콘텐츠와 마찬가지로 쉽게 연결해 발행하고 배포할 수 있도록 CMS 설계 초기부터 고려했었습니다. 테스트 환경과 실서버 발행 환경에 충돌이 없고, 기존 사용자 경험과 이어지며, 유료 구독자에 한하여 인터렉티브 콘텐츠가 제공되는 것 또한 가능토록 구현했었습니다. 이질적이지 않은 것, 지속적으로 관리되는 것 또한 인터렉티브 콘텐츠를 만듦에 있어 고려해야할 사항입니다.
 
