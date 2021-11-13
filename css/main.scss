@@ -327,9 +327,11 @@ footer .badge{
     }
     div.badge h2,
     div.badge a,
-    .c-article__main blockquote,
     .social a{
         color:#ccc;
+        &:hover{
+            color:#fff
+        }
     }
 
     .c-article__main a,
@@ -337,12 +339,14 @@ footer .badge{
     .c-archives__list li a{
         color:#c90;
         &:hover{
-            color:#c90
+            color:#fc0
         }
     }
     .c-article__main {
         color:#bdc1c6;
-
+        blockquote{
+            color:#d0d0d0;
+        }
         blockquote,
         p code.highlighter-rouge,
         pre{
