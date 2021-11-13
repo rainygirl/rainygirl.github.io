@@ -120,17 +120,7 @@ z-index:1;
         }
     }
 }
-/*
-.c-header {
-    word-break:keep-all;
 
-    h1{font-size:3em;margin:70px 0 20px 0}
-    h2{color:#333}
-    h3{font-weight:normal;margin-top:10px}
-    h2,h3{font-size:1em}
-    h3.aka{font-size:.8em;margin:0 0 50px 0}
-}
-*/
 .c-article__main{
     line-height:2em;
     font-size:17px;
@@ -333,23 +323,32 @@ footer .badge{
         text-shadow:none;
     }
 
-    .c-header h2, 
     div.badge a,
+    .c-article__main blockquote,
     .social a{
-            color:#ccc;
+        color:#ccc;
     }
 
-    blockquote,
-    p code.highlighter-rouge,
-    .c-article__main pre{
-        border-color:#303030;
+    .c-page__foote>a,
+    .c-archives__list li a{
+        color:#c90;
+        &:hover{
+            color:#c90
+        }
     }
-
-    table{
-        td,th,
-        thead th,
-        td{
+    .c-article__main {
+        blockquote,
+        p code.highlighter-rouge,
+        pre{
             border-color:#303030;
+        }
+
+        table{
+            td,th,
+            thead th,
+            td{
+                border-color:#303030;
+            }
         }
     }
 }
