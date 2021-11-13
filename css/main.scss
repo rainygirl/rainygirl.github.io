@@ -166,10 +166,13 @@ z-index:1;
         max-width:100%;
         overflow:scroll;
         line-height:1em;
-    }
-    pre.highlight code{
-        font-family:Monaco, Consolas, 'Courier New', monospace;
-        font-size:.75em;
+        &.highlight{
+            border:0;
+            code{
+                font-family:Monaco, Consolas, 'Courier New', monospace;
+                font-size:.75em;
+            }
+        }
     }
     p code.highlighter-rouge{
         border:1px solid #e0e0e0;
