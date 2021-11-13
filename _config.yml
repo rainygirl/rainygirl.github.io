@@ -12,13 +12,12 @@ permalink: /:year/:month/:title
 sass:
     style: compressed
 
+highlighter: rouge
+
 gems:
   - jemoji
   - jekyll-sitemap
   - amp-jekyll 
-
-ampdir: amp/
-enable_amp: true
 
 google_analytics: UA-19555082-3
 
