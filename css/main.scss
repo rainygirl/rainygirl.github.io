@@ -162,9 +162,10 @@ z-index:1;
     }
     pre{
         border-left:1px solid #d0d0d0;
-        padding-left:10px;
+        padding:10px;
         max-width:100%;
         overflow:scroll;
+        line-height:1em;
     }
     pre.highlight code{
         font-family:Monaco, Consolas, 'Courier New', monospace;
