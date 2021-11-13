@@ -43,7 +43,7 @@ MacOS 또는 Linux가 돌아가는 머신이라면 간단히 cronjob 으로 스�
 - Yeelight API에 접근하는 다양한 라이브러리들이 이미 만들어져있다. Python은 [yeelight](https://pypi.org/project/yeelight/) 패키지가 무난하다. [공식 API 문서](https://www.yeelight.com/download/Yeelight_Inter-Operation_Spec.pdf)를 참조해서 직접 접근해도 괜찮다.
 - 나는 아래와 같이 CLI로 argument를 받는 Python 코드를 만들고 [setuptools](https://pypi.org/project/setuptools/) 패키지를 통해 로컬 명령어로 구워버렸다.
 
-```python
+---python
 
 # src/yrun.py
 from yeelight import Bulb
@@ -69,11 +69,11 @@ def do() :
 
 if __name__ == '__main__' :
     do()
-```
+---
 
 조명이 여러개라면 bulb 를 여러개 설정해두면 된다. 나는 개별적으로 조명 색상을 설정할 때도 있어서 커멘드를 나누어 구웠다.
 
-```python
+---python
 
 # setup.py
 
@@ -98,7 +98,7 @@ setup(name='y',
       y=src.yrun:do
       ''',
       )
-```
+---
 
 `python3 setup.py install` 를 돌리면 `/usr/local/bin/y` 가 만들어진다. 이제 `y red` 를 치면 시뻘건 조명이, `y yellow` 를 치면 2600K 색온도의 따뜻한 노란 조명이 켜지게 된다. 
 
