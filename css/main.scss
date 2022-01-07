@@ -234,6 +234,11 @@ a.twitter-follow-button {
       color: #c00;
     }
   }
+  ul{
+      li{
+          word-break:keep-all;
+      }
+  }
   > h2 {
     font-size: 1em;
   }
@@ -323,6 +328,7 @@ footer .badge {
   }
   .c-article-header h1 {
     margin-top: 260px;
+    word-break: keep-all;
   }
   .c-archives__list {
     li {
