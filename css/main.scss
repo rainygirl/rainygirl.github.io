@@ -209,6 +209,7 @@ a.twitter-follow-button {
   header h1 {
     font-size: 1.5em;
     font-weight: 400;
+    word-break: keep-all;
   }
   pre {
     border-left: 1px solid #d0d0d0;
@@ -239,6 +240,7 @@ a.twitter-follow-button {
           word-break:keep-all;
       }
   }
+
   > h2 {
     font-size: 1em;
   }
