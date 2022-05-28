@@ -159,13 +159,14 @@ mysql> select * from app_personrel;
 원인을 찾기 위해 새로 빈 유닛테스트를 아래와 같이 구성했다.
 
 ```python
+# test2.py
 
 from django.contrib.contenttypes.models import ContentType
 from app.models import Track
 
 from rest_framework.test import APITestCase
 
-class TestTests(APITestCase):
+class NewTests(APITestCase):
     def setUp(self):
         print(
             'ContentType.get_for_model Track Instance : ',
@@ -226,6 +227,10 @@ ContentType은 GenericRelation으로 object 를 넣고 꺼낼 때마다 django_c
 ContentType의 캐싱은 `ContentTypeManager._add_to_cache` 에서 담당한다. 이 코드는 `django.contrib.contenttypes.models` 안에 있다. 테스트 데이터베이스로 전환되기 전 캐시가 생성되는 것은 아닌지 확인하기 위해, django 코드를 잠시 열고 다음과 같이 `ContentTypeManger._add_to_cache` 가 호출될 때마다 어느 데이터를 읽는지 print를 찍어보았다.
 
 ```python
+# django/contrib/contenttypes/models.py
+
+...중략...
+
 def _add_to_cache(self, using, ct):
     key = (ct.app_label, ct.model)
     print(key)    # new line
