@@ -31,32 +31,33 @@ class Video(models.Model):
 
 
 class PersonRel(models.Model):
-    person = models.ForeignKey("Person", on_delete=models.CASCADE, related_name="person_test")
+    person = models.ForeignKey('Person', on_delete=models.CASCADE, related_name='person_test')
 
     target_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
     target_id = models.IntegerField(null=True)
   
-    target = GenericForeignKey("target_type", "target_id")
+    target = GenericForeignKey('target_type', 'target_id')
 
     def __str__(self):
-        return f"{self.person}, {self.target_type_id}, {self.target_type}, {self.target}"
+        return f'{self.person}, {self.target_type_id}, {self.target_type}, {self.target}'
 ```
 
 실서비스가 돌아가는 서버에서는 이 모델에 아무런 문제가 없었다. shell 환경에서도 전혀 문제가 없었다. 유독, 유닛테스트 환경에서만 광범위한 오작동이 벌어졌다. 모델에 변경사항이 생긴것도 아니었다. 어째서 잘 돌아가던 유닛테스트가 한꺼번에 깨지는가? 아래와 같이 새 테스트를 추가해 실험해보았다.
 
 ```python
+# test1.py
 from rest_framework.test import APITestCase
 from app.models import Track, PersonRel
 
 class GenericTests(APITestCase):
     def setUp(self):
-        self.http_host = "localhost:8000"
+        self.http_host = 'localhost:8000'
 
     def test(self):
-        target_item=Track.objects.get(id=1)
+        target_item = Track.objects.get(id=1)
         print('target_item:', target_item)
 
-        pr=PersonRel(person_id=1, target=target_item)
+        pr = PersonRel(person_id=1, target=target_item)
         pr.save()
 
         print('pr from instance:', pr)
@@ -167,17 +168,18 @@ from rest_framework.test import APITestCase
 class TestTests(APITestCase):
     def setUp(self):
         print(
-            "ContentType.get_for_model Track Instance : ",            ContentType.objects.get_for_model(Track),
+            'ContentType.get_for_model Track Instance : ',
+            ContentType.objects.get_for_model(Track),
             ContentType.objects.get_for_model(Track).id,
         )
         ctid = ContentType.objects.get_for_model(Track).id
         print(
-            f"ContentType.get           id={ctid} Instance : ",
+            f'ContentType.get           id={ctid} Instance : ',
             ContentType.objects.get(id=ctid),
             ContentType.objects.get(id=ctid).id,
         )
         print(
-            "ContentType.get from get_for_model(Track): ",
+            'ContentType.get from get_for_model(Track): ',
             ContentType.objects.get(id=ContentType.objects.get_for_model(Track).id),
             ContentType.objects.get(id=ContentType.objects.get_for_model(Track).id).id,
         )
