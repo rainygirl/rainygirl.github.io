@@ -155,7 +155,7 @@ mysql> select * from app_personrel;
 
 # 오작동의 원인을 찾아서
 
-깨진 유닛테스트에서는 DB에 넣은 Person object가 Video object로 바뀌어 응답되고 있었다. type_id 값이 바뀌는 것은 아니었다. object를 DB에 넣기 전과 DB에서 다시 꺼낼 때 인식되는 model type이 서로 달랐다.
+깨진 유닛테스트에서는 DB에 넣은 Track object가 Video object로 바뀌어 응답되고 있었다. type_id 값이 바뀌는 것은 아니었다. object를 DB에 넣기 전과 DB에서 다시 꺼낼 때 인식되는 model type이 서로 달랐다.
 원인을 찾기 위해 새로 빈 유닛테스트를 아래와 같이 구성했다.
 
 ```python
