@@ -219,7 +219,7 @@ ContentType.get from get_for_model(Track):  music | track 11
 
 `manage.py test` 로 테스트를 돌리게 되면 django는 test 데이터베이스를 따로 만들게 된다. `test_` prefix가 붙은 데이터베이스를 새로 만들고, migrations를 참조해 새로운 테이블을 DB에 잠시 만든다. django_content_type 테이블도 최신 migrations를 참조하여 최신 버전으로 생성된다.
 
-개발환경의 django_content_type 테이블은 이전의 레거시가 겹겹이 쌓여 생겨났다. 사라진 모델의 content type 레코드는 id를 차지했다가 버려진 상태이다. 테스트 환경의 django_content_type 테이블은 가장 최신의 환경을 기준으로 새로 깔끔한 id가 매겨져있다. 사라진 모델의 content type 레코드를 더는 만들지 않는다. 즉 개발환경의 django_content_type 테이블의 id값과 테스트 환경의 django_content_type 테이블의 id값이 다를 수 있다.
+개발환경의 django_content_type 테이블 데이터는 이전의 레거시가 겹겹이 쌓여 생겨났다. 사라진 모델의 content type 레코드는 id를 차지했다가 버려진 상태이다. 테스트 환경의 django_content_type 테이블은 가장 최신의 환경을 기준으로 새로 깔끔한 id가 매겨져있다. 사라진 모델의 content type 레코드는 만들지 않는다. 즉 개발환경의 django_content_type 테이블의 id값과 테스트 환경의 django_content_type 테이블의 id값이 다를 수 있다.
 
 ContentType은 GenericRelation으로 object 를 넣고 꺼낼 때마다 django_content_type 테이블에 담긴 각 모델의 type_id값을 알아야 한다. 특히 다량의 SELECT 쿼리로 가져온 object 들의 model type을 알기 위해 매번 DB query를 보내는 것은 좋은 방법이 아닐 것이다. 그래서 [object의 타입을 결정하는 `ContentType.objects.get_for_model` 은 관련 데이터를 ContentTypeManager 클래스의 캐시에 담아 응답한다.](https://github.com/django/django/blob/main/django/contrib/contenttypes/models.py)
 
