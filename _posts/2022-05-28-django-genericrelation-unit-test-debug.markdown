@@ -111,7 +111,7 @@ ManyToManyField 를 사용하게 되면, 두 모델간의 관계를 정의하는
 # GenericRelation 작동 원리
 
 [django는 GenericRelation을 contenttypes framework 을 통해 구현한다.](https://docs.djangoproject.com/en/4.0/ref/contrib/contenttypes/)
-ContentType 은 아래와 같이 작동한다.
+ContentType은 아래와 같이 작동한다.
 
 ```python
 >>> user = User.objects.get(username='Guido')
