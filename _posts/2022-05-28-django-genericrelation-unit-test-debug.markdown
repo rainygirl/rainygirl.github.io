@@ -258,7 +258,7 @@ Creating test database for alias 'default'...
 
 # 해결
 
-대충 메꿔버리자 하고 models.Manager를 바꿔보기도 하고, model의 save() 를 뜯어보기도 했다. 잠시 차를 마시고, 바람을 쐰 뒤, 머리를 식히며 천천히 생각해보다 ContentType의 구동원리를 떠올렸다. 역시 [소프트웨어 엔지니어는 규칙적으로 휴식을 취해야 한다.](https://rainygirl.github.io/2021/11/pomodoro-room-light-timer)
+대충 메꿔버리자 하고 models.Manager를 바꿔보기도 하고, model의 save() 를 뜯어보기도 했다. 잠시 차를 마시고, 바람을 쐰 뒤, 머리를 식히며 천천히 생각해보다 django의 ContentType 구동원리를 떠올렸다. 역시 [소프트웨어 엔지니어는 규칙적으로 휴식을 취해야 한다.](https://rainygirl.github.io/2021/11/pomodoro-room-light-timer)
 
 서버 가동과정에서 ContentType 캐시를 일부러 만드는 코드가 있었다. 전혀 엉뚱한 곳에 있던 django management command 의 환경설정 코드였다. 서버 가동 단계에서부터 ContentType을 조회하게끔 구현했었다. django의 test runner는 지정된 모든 app 의 코드를 돌며 기본적으로 체크할 테스트 코드를 찾아내는데, 이 과정에서 여러 코드를 로드하게 되고, 그 과정에서 ContentType 캐시가 먼저 만들어졌고, 그 다음에 테스트 데이터베이스로 전환된 것이었다. 유닛테스트 과정에서는 테스트 데이터베이스와는 전혀 다른 ContentType이 응답되고 있으니 강아지가 고양이로 변할 수 밖에 없었을 것이다. 그전까지는 개발환경의 django_content_type 테이블 id가 테스트 환경의 새 테이블 id와 다르지 않아 문제가 되지 않았는데, 최근의 DB Migration 이후 django_content_type 테이블의 id가 재배열되면서 이 문제가 수면 위로 드러났다.
 
