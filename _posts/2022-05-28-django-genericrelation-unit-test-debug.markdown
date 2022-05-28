@@ -4,7 +4,7 @@ title:  "django GenericRelation 유닛테스트 수난기"
 date: 2022-05-28 00:00:00
 ---
 
-django 프로젝트에 큰 DB Migration을 적용한 직후부터 django Unit Test가 와장창 깨지기 시작했다. Migration에 Side Effect가 있나?하고 서버 응답을 확인해 보니 서버는 멀쩡히 돌아가고 있었다. 과거에도 Migration은 자주 했었는데 이번에만 느닷없이 유닛테스트가 실패하고 있었다. 자세히 보니 유독 GenericRelation 을 사용하는 테스트 단위만 깨지고 있었다.
+django 프로젝트에 큰 DB Migration을 적용한 직후부터 django Unit Test가 와장창 깨지기 시작했다. Migration에 Side Effect가 있나?하고 서버 응답을 확인해 보니 서버는 멀쩡히 돌아가고 있었다. 과거에도 Migration은 자주 했었는데 이번에만 느닷없이 유닛테스트가 실패하고 있었다. 자세히 보니 유독 GenericRelation을 사용하는 테스트 단위만 깨지고 있었다.
 
 
 # 배경
