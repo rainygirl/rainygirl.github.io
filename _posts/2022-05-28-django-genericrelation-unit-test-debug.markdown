@@ -119,8 +119,8 @@ ContentType은 아래와 같이 작동한다.
 >>> t.save()
 >>> t.target
 <User: Guido>
->>> movie = Video.objects.get(title='Shoplifters')
->>> t = PersonRel(target=movie, person=p)
+>>> video = Video.objects.get(title='Shoplifters')
+>>> t = PersonRel(target=video, person=p)
 >>> t.save()
 >>> t.target
 <Video: Shoplifters>
