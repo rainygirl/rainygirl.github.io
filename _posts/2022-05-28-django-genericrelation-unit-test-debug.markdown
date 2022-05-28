@@ -46,6 +46,7 @@ class PersonRel(models.Model):
 
 ```python
 # test1.py
+
 from rest_framework.test import APITestCase
 from app.models import Track, PersonRel
 
@@ -132,7 +133,6 @@ mysql> select * from django_content_type;
 +----+-----------+----------+
 | id | app_label | model    |
 +----+-----------+----------+
-|  1 | admin     | logentry |
 |  4 | auth      | user     |
 | 11 | app       | person   |
 | 12 | app       | track    |
