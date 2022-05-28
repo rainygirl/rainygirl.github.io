@@ -92,7 +92,7 @@ ManyToManyField 를 사용하게 되면, 두 모델간의 관계를 정의하는
 두 설계방식은 저마다의 장단점이 있다. 특히 대표적인 문제로, 만약 서로 다른 구조의 모델을 GenericRelation 에 담았다면 특정 모델에만 존재하는 필드를 prefetch로 몽땅 불러올 때 필연적으로 오류를 만나게 된다. 
 여러 ORM Framework들이 [prefetch 등을 활용해 JOIN 쿼리 성능을 끌어올리는 Eager Loading을 권장하는데,](https://docs.djangoproject.com/en/4.0/ref/models/querysets/#prefetch-related) GenericRelation에서는 이를 100% 활용하기 어렵다. 따라서 서비스를 고도화하다보면 성능 한계에 봉착해 raw SQL을 짜거나 캐시 데이터를 따로 저장하는 구조로 나아가게 된다. GenericRelation은 Django의 안티 패턴으로 여기는 의견도 있다.
 
-> *Why it's bad*
+> Why it's bad
 > - Database design
 > - Referential integrity
 > - Performance
