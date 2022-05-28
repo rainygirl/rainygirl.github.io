@@ -197,7 +197,7 @@ ContentType.get           id=11 Instance :  music | video 11
 ContentType.get from get_for_model(Track):  music | video 11
 ```
 
-그러니까, `ContentType.objects.get_for_model()` 에서 테스트 DB와는 다른 값을 내놓은 것이다. get_for_model 는 캐싱이 적용된다. 테스트 코드 상단에 하나의 코드를 더 추가해보았다.
+그러니까, `ContentType.objects.get_for_model()` 에서 테스트 DB와는 다른 값을 내놓은 것이다. get_for_model()은 캐시를 활용한다. 테스트 코드 상단에 하나의 코드를 더 추가해보았다.
 
 ```python
         ContentType.objects.clear_cache()
