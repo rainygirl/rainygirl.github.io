@@ -220,7 +220,6 @@ a.twitter-follow-button {
     &.highlight {
       border: 0;
       code {
-        font-family: Monaco, Consolas, "Courier New", monospace;
         font-size: 0.75em;
       }
     }
@@ -234,9 +233,14 @@ a.twitter-follow-button {
       padding: 0 5px;
       color: #c00;
       font-size:.9em;
-      font-family: Monaco, Consolas, "Courier New", monospace;
       letter-spacing:-.5px;
     }
+  }
+  p code.highlighter-rouge,
+  pre.highlight code,
+  code,
+  pre{
+      font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
   }
   ul{
       li{
