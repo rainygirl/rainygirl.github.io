@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "writersclub.io 개발기록"
-date: 2022-09-29 00:00:00
+title:  "01410.coroke.net 개발기록"
+date: 2022-10-30 00:00:00
 ---
 
 서비스의 사용자 경험이 역사로 보존될 수 있을까요?
