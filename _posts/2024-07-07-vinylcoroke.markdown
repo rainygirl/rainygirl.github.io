@@ -112,7 +112,7 @@ export default defineConfig({
 
 ### robots.txt
 
-서비스를 거의 다 만든 뒤, 주말에 밖에 나갔다 돌아오는 길에 문득 robots.txt 가 떠올랐습니다. 크롤링이 수반된 검색 봇을 만들었다면 robots.txt의 정책을 따라야 할텐데, 데이터를 검증하는데에만 몰입해 이를 까먹었던 것입니다. 뒤늦게 검색 봇이 robots.txt를 참조토록 하고, 각 매장 웹사이트의 robots.txt 를 확인하였습니다. 역시나 [‘네이버 스마트스토어’](https://sell.smartstore.naver.com/)의 경우 외부의 모든 검색 봇 접근과 데이터 수집을 거부하고 있었습니다. 아쉽지만, 네이버 스마트스토어를 쓰는 매장은 제공 목록에서 제외하였습니다. 그래도 다른 매장의 물량이 많이 서비스 오픈에는 무리가 없었습니다.
+서비스를 거의 다 만든 뒤, 주말에 밖에 나갔다 돌아오는 길에 문득 robots.txt 가 떠올랐습니다. 크롤링이 수반된 검색 봇을 만들었다면 robots.txt의 정책을 따라야 할텐데, 데이터를 검증하는데에만 몰입해 이를 까먹었던 것입니다. 뒤늦게 검색 봇이 robots.txt를 참조토록 하고, 각 매장 웹사이트의 robots.txt 를 확인하였습니다. 역시나 [‘네이버 스마트스토어’](https://sell.smartstore.naver.com/)의 경우 외부의 모든 검색 봇 접근과 데이터 수집을 거부하고 있었습니다. 아쉽지만, 네이버 스마트스토어를 쓰는 매장은 제공 목록에서 제외하였습니다. 그래도 다른 매장의 물량이 많아 서비스 오픈에는 무리가 없었습니다.
 
 ### 이미지 lazy loading
 
@@ -140,7 +140,7 @@ SELECT `artists`.`name` FROM artists WHERE artists.`name` >= "테일라" AND art
 
 ### 한글 키보드 이벤트 대응하기
 
-자동완성 UI는 편의상 키보드 입력 UI를 제공하곤 합니다. 이때, 한글 IME 문제가 발생됩니다. 일부 OS (MacOS) 와 일부 한글 IME(구름 등)을 같이 쓰는 경우 onkeydown, onkeyup이 영문 입력때와 달리 두 번 발생되는 경우가 있습니다. 한글 글자가 조합되려다가 풀리는 과정에서 이벤트를 두번 발생시키기 때문에 그렇습니다. 일반적으로 KeyboardEvent.iscomposing 이 true 일 때 한글 조합이 생성되는 도중인 것으로 간주해서 회피할 수도 있지만, React처럼 compositionstart, compositionend 이벤트를 따로 주는 경우도 있고, 아예 iscomposing이 엉터리로 날아오는 환경도 있습니다. 2000년대부터 쓰여온 회피기법은, 200ms 이내에 같은 이벤트가 반복되면 하나는 무시하도록 setTimeout 을 거는 것입니다. writersclub.io 글쓰기 에디터에도 적용된 해법입니다.
+자동완성 UI는 편의상 키보드 입력 UI를 제공하곤 합니다. 이때, 한글 IME 문제가 발생됩니다. 일부 OS (MacOS) 와 일부 한글 IME(구름 등)을 같이 쓰는 경우 onkeydown, onkeyup이 영문 입력때와 달리 두 번 발생되는 경우가 있습니다. 한글 글자가 조합되려다가 풀리는 과정에서 이벤트를 두번 발생시키기 때문에 그렇습니다. 일반적으로 KeyboardEvent.iscomposing 이 true 일 때 한글 조합이 생성되는 도중인 것으로 간주해서 회피할 수도 있지만, React처럼 compositionstart, compositionend 이벤트를 따로 주는 경우도 있고, 아예 iscomposing이 엉터리로 날아오는 환경도 있습니다. 2000년대부터 쓰여온 회피기법은, 200ms 이내에 같은 이벤트가 반복되면 하나는 무시하도록 setTimeout 을 거는 것입니다. [writersclub.io](https://writersclub.io) 글쓰기 에디터에도 적용된 해법입니다.
 
 # 향후 계획
 
