@@ -198,6 +198,10 @@ a.twitter-follow-button {
     margin-left: 0;
     padding-left: 2.5em;
     color: #630;
+    p{
+      margin:.5em 0;
+      font-size:.9em;
+    }
     img {
       border: 1px solid #000;
     }
@@ -419,8 +423,9 @@ footer .badge {
   .c-article__main {
     color: #bdc1c6;
     blockquote {
-      color: #d0d0d0;
+      color: #f0a0a0;
     }
+
     blockquote,
     p code.highlighter-rouge,
     pre {
