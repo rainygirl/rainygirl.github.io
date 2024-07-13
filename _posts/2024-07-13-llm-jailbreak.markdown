@@ -75,7 +75,7 @@ class ClaudePrompt:
         chat_completions = self.client.messages.create(
             model="claude-3-opus-20240229",
             max_tokens=1000,
-            temperature=1.0,
+            temperature=0.0,
             messages=[{"role": "user", "content": prompt}],
         )
         return chat_completions.content[0].text
