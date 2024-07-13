@@ -315,7 +315,7 @@ Claude의 욕설도 GPT-4o 못지 않습니다. 남성이 남성을 상대로 �
 
 # 사람을 공격하는 AI, 우리는 어떻게 해야하나
 
-[기술을 영악하게 쓰는 자들](https://rainygirl.github.io/2017/09/tech-abuser) 칼럼에서 언급했던 것처럼, 좋은 뜻에서 만들어진 기술은 언제나 다른 목적으로 악용되고, 제도와 법률은 이를 뒤늦게 쫓기 마련입니다. [마이크로 기술의 습격](https://rainygirl.github.io/2018/06/microtechnical-attack-you) 칼럼에서 언급했듯 기술의 학습비용은 더욱 저렴해지고, 접근성은 더욱 높아지기 마련입니다. 이는 AI 기술에서도 마찬가지로 적용됩니다. 누구나 쉽게 AI 기술에 접근할 수 있고, 좋은 목적으로 사용하는 이들이 있는 반면, 나쁜 의도로 사용하는 이들도 등장하기 마련입니다. 알렉산더 샬렌베르크 Alexander Schallenberg 오스트리아 외교장관은 지난 4월 29일 “지금이 우리 시대 ‘오펜하이머의 순간(Oppenheimer Moment)’이다.” 라고 경고했습니다. 좋은 뜻에서 만들어진 기술이 대량 살상에 활용되는 순간이 왔다는 이야기입니다. 국제적인 논의에도 불구하고 AI 로봇이 인간을 살상하는 시대는 우크라이나 전장에서 보듯 이미 활짝 열렸습니다.
+7년 전, [기술을 영악하게 쓰는 자들](https://rainygirl.github.io/2017/09/tech-abuser) 칼럼에서 언급했던 것처럼, 좋은 뜻에서 만들어진 기술은 언제나 다른 목적으로 악용되고, 제도와 법률은 이를 뒤늦게 쫓기 마련입니다. 6년 전, [마이크로 기술의 습격](https://rainygirl.github.io/2018/06/microtechnical-attack-you) 칼럼에서 언급했듯 기술의 학습비용은 더욱 저렴해지고, 접근성은 더욱 높아지기 마련입니다. 이는 AI 기술에서도 마찬가지로 적용됩니다. 누구나 쉽게 AI 기술에 접근할 수 있고, 좋은 목적으로 사용하는 이들이 있는 반면, 나쁜 의도로 사용하는 이들도 등장하기 마련입니다. 알렉산더 샬렌베르크 Alexander Schallenberg 오스트리아 외교장관은 지난 4월 29일 “지금이 우리 시대 ‘오펜하이머의 순간(Oppenheimer Moment)’이다.” 라고 경고했습니다. 좋은 뜻에서 만들어진 기술이 대량 살상에 활용되는 순간이 왔다는 이야기입니다. 국제적인 논의에도 불구하고 AI 로봇이 인간을 살상하는 시대는 우크라이나 전장에서 보듯 이미 활짝 열렸습니다.
 
 [‘Our Oppenheimer moment’ — In Ukraine, the robot wars have already begun - POLITICO](https://www.politico.eu/article/robots-coming-ukraine-testing-ground-ai-artificial-intelligence-powered-combat-war-russia/)
 
