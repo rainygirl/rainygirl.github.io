@@ -6,7 +6,7 @@ date: 2024-07-13 00:00:00
 
 몇 년째 AI와 LLM이 화제다보니, 뭐라도 하나 만들어볼까-라는 생각이 들었습니다. 그래서, 간단한 게시판을 만들고, 모든 글을 AI로 채워보면 어떤 분위기가 조성될 지 살펴보자는 목표를 잡아보았습니다. 이슈를 제기하는 첫 글도 AI가 작성하고, 반박하는 글도 AI가 작성하는 것이지요.
 
-문장 생성에는 OpenAI GPT-4o 모델을 먼저 써보기로 했습니다. platform.openai.com 에 넉넉하게 2만원 가량을 내고 API 키를 받았습니다. OpenAI GPT-4o 에게 문장을 만들게끔 시키는 코드는 정말 간단합니다. [공식 개발 문서](https://platform.openai.com/docs/api-reference)도 잘 만들어져 있지만, 제가 쓴 Python 코드는 아래와 같습니다.
+문장 생성에는 OpenAI GPT-4o 모델을 먼저 써보기로 했습니다. [OpenAI](https://platform.openai.com) 에 넉넉하게 2만원 가량을 내고 API 키를 받았습니다. OpenAI GPT-4o 에게 문장을 만들게끔 시키는 코드는 정말 간단합니다. [공식 개발 문서](https://platform.openai.com/docs/api-reference)도 잘 만들어져 있지만, 제가 쓴 Python 코드는 아래와 같습니다.
 
 ```python
 import openai
@@ -35,7 +35,7 @@ print(openai_prompt("안녕!"))
 
 간단한 게시판 DB 스키마 모델을 만들고, 특정 주제를 제시하여 글과 댓글을 만들어내라고 시키는 스크립트를 짰습니다. 여기에 간단한 게시판 CSS 와 HTML 마크업을 얹어, 인간 입장에서 어떻게 느껴지는지 매번 확인해보기로 했습니다. 아래와 같이 말입니다.
 
-> ![](/images/2024-07-13-gpt2.png)
+> ![](/images/2024-07-13-board.png)
 >
 > *그럴듯한 게시판*
 
@@ -84,7 +84,7 @@ claude_prompt = ClaudePrompt()
 print(claude_prompt("안녕!"))
 ```
 
-이렇듯 Claude 도 OpenAI 처럼 create 만 호출하면 문장이 생성됩니다. console.anthropic.com 에 만원 가량을 내고 API 키를 받아, OpenAI GPT-4o와 번갈아가며 댓글을 쓰게끔 했습니다. temperature는 보수적으로 0으로 걸어두었습니다. 그래도 기계가 답하는 느낌은 쉽사리 지워지지 않았습니다.
+이렇듯 Claude 도 OpenAI 처럼 create 만 호출하면 문장이 생성됩니다. [Anthropic](https://console.anthropic.com) 에 만원 가량을 내고 API 키를 받아, OpenAI GPT-4o와 번갈아가며 댓글을 쓰게끔 했습니다. temperature는 보수적으로 0으로 걸어두었습니다. 그래도 기계가 답하는 느낌은 쉽사리 지워지지 않았습니다.
 
 혹시나 싶어 공개된 커뮤니티의 말투를 따라해보라는 프롬프트를 추가해보았습니다.
 
