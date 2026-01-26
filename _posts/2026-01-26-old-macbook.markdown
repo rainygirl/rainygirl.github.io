@@ -46,7 +46,7 @@ ChromeOS Flex는 업무용 기기로는 충분히 쓸 수 있었다. 하지만 �
 
 ## Linux Mint 22.2 Cinnamon
 
-예쁘기로 유명한 Ubuntu나 ElementaryOS는 맥 환경에서 전체적으로 키 입력이 안되거나 설치 과정의 UI가 망가져있거나, 메뉴 깜빡임이 심한 현상이 발견된다. Lubuntu나 Xubuntu는 시도하지도 않았다. 이 기기는 예쁨에 방점이 찍혀 있기 때문에, 예쁜 OS로 제 기능을 발휘하게 하고 싶었다. Xfce나 MATE는 고려하지 않았다. 그렇게 돌고 돌아 Linux Mint 22.2 Cinnamon에 정착했다.
+예쁘기로 유명한 Ubuntu나 ElementaryOS는 맥 환경에서 전체적으로 키 입력이 안되거나 설치 과정의 UI가 망가져있거나, 메뉴 깜빡임이 심한 현상이 발견된다. Lubuntu나 Xubuntu는 시도하지도 않았다. 이 기기는 예쁨에 방점이 찍혀 있기 때문에, 예쁜 OS로 제 기능을 발휘하게 하고 싶었다. Xfce나 MATE는 고려하지 않았다. 그렇게 돌고 돌아 [Linux Mint 22.2 Cinnamon](https://linuxmint.com/download.php)에 정착했다.
 
 부팅에는 20초 정도가 걸리는데 MacOS 부팅과 비슷해서 감당할 만하다.
 모든 화면을 까맣게 만들면 하얀 바디와 대비되어 집중 가능한 업무 환경이 조성된다.
