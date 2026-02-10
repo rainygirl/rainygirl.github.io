@@ -86,5 +86,8 @@ LLM이 품고 있는 본질적인 구조때문에, LLM은 자신이 만들어낸
 [https://github.com/rainygirl/rspeaker](https://github.com/rainygirl/rspeaker)
 에서 누구나 다운받아 체험해볼 수 있다.
 
+> ![](/images/2026-02-10-terminal.png)
+> make run 만 하면 작동한다
+
 MIT 라이센스이다. 어차피 내가 수제로 만든 코드도 아니다. 누구나 고쳐 쓸 수 있지만 각 코드의 책임은 고쳐쓰는 각자에게 있다.
 
