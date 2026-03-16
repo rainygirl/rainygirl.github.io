@@ -5,16 +5,19 @@
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="rainygirl.github.io">
 <meta property="og:title" content="{{page.title}}">
-<meta property="og:image" content="/images/ogimage.png" />
+<meta property="og:image" content="{{ site.url }}/images/ogimage.png" />
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{page.title}}">
 <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 <meta name="twitter:creator" content="@rainygirl_">
-<meta name="twitter:image" content="https://rainygirl.github.io/images/ogimage.png" />
+<meta name="twitter:image" content="{{ site.url }}/images/ogimage.png" />
 <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-<link rel="image_src" href="/images/ogimage.png" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:700" rel="stylesheet" type="text/css">
+<link rel="image_src" href="{{ site.url }}/images/ogimage.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 <link rel="stylesheet" href="/css/syntax.css">
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

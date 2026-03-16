@@ -1,6 +1,27 @@
 ---
 layout: page
 ---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ page.title | jsonify }},
+  "image": "{{ site.url }}/images/ogimage.png",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author }}",
+    "url": "https://rainygirl.com"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.author }}"
+  },
+  "description": {{ page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 | jsonify }},
+  "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}"
+}
+</script>
 <article class="c-article">
     <header class="c-article__header">
         <h1 class="c-article__title">{{ page.title }}</h1>
