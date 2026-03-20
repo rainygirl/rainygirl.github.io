@@ -7,17 +7,15 @@ baseurl: ""
 url: "https://rainygirl.github.io" 
 
 include: [_pages]
-markdown: kramdown
+future: true
 permalink: /:year/:month/:title
 sass:
     style: compressed
 
-highlighter: rouge
-
-gems:
+plugins:
   - jemoji
   - jekyll-sitemap
-  - amp-jekyll 
+  - amp-jekyll
 
-google_analytics: UA-19555082-3
+google_analytics: G-RQBZDH74KC
 
